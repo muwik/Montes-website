@@ -1,0 +1,3 @@
+User-agent: * 
+Disallow:
+Sitemap: https://monte-home.appspot.com/sitemap.xml
