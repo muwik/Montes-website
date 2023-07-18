@@ -1,0 +1,189 @@
+/* Страница Welcome */
+.mc-course-basement {
+    position: relative;
+    color: var(--mc-white) !important;
+    padding-left: 3.8rem;
+    height: 650px;
+    border-radius: 0.6rem;
+    background-size: cover !important;
+    background-image: url(../images/course-basement-piano-g.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+
+@supports (background-image: url(../images/course-basement-piano-g.webp);) {
+    background-image: url(../images/course-basement-piano-g.jpg);
+}
+}
+
+.mc-course-basement h1 {
+    font-size: 4.2rem;
+}
+
+.mc-course-basement-add {
+    border: 1.5px solid var(--mc-white);
+}
+
+.mc-course-basement-link {
+    cursor: pointer;
+    line-height: 1.3rem;
+    border-bottom: 1px dotted var(--mc-white);
+    padding-bottom: 0.05rem;
+}
+
+/*---*/
+/*Тултипы*/
+
+.mc-subject-def {
+    background-color: var(--mc-white);
+    color: var(--mc-primary-text) !important;
+}
+
+.mc-subject-info + .tooltip {
+    margin-left: 50px !important;
+}
+
+.mc-subject-info + .tooltip > .tooltip-arrow:before {
+    margin-left: -50px !important;
+}
+
+.mc-subject-info + .tooltip > .tooltip-inner {
+    max-width: 300px;
+}
+
+/*---*/
+/*ФОРМАТ ОБУЧЕНИЯ*/
+
+.mc-format-block {
+    min-height: 180px;
+    width: 100%;
+}
+
+.mc-format-block .bld {
+    letter-spacing: -0.03rem;
+}
+
+/*---*/
+/*ЦЕНЫ*/
+
+.mc-course-prices {
+    min-height: 400px;
+}
+
+.mc-course-prices .btn-group {
+    width: 100%;
+    text-align: left;
+}
+
+.mc-prices-add {
+    border-radius: 0.6rem;
+    overflow: hidden;
+    width: 315px;
+    height: 195px;
+}
+
+.mc-prices-stage {
+    background-color: var(--mc-dark-accent-bg);
+    color: var(--mc-white);
+}
+
+.mc-price-total {
+    border-bottom: 1px solid var(--mc-secondary-border);
+}
+
+/*Таблица выпадающего списка цен*/
+
+.mc-prices-table-form-group .dropdown-menu {
+    padding: 0 !important;
+    border: 1px solid var(--mc-secondary-border);
+}
+
+.mc-prices-table-form-group h6 {
+    line-height: 2.5rem !important;
+}
+
+.mc-prices-table-form-group .dropdown-item {
+    border-bottom: 1px solid var(--mc-secondary-border);
+    padding: 0 !important;
+}
+
+.mc-prices-table-form-group .dselect-wrapper,
+.mc-prices-table-form-group .form-select {
+    padding: 0 !important;
+}
+
+.mc-prices-table-form-group .form-select {
+    bottom: auto !important;
+}
+
+.mc-prices-table-form-group .dropdown-item:last-child {
+    border-bottom: 0px;
+}
+
+.mc-prices-table-form-group .col-6:first-child {
+    border-right: 1px solid var(--mc-secondary-border);
+}
+
+.mc-prices-table-form-group .dropdown-item[data-dselect-value="form-table-header"] .col-6 {
+    background-color: var(--mc-primary-accent-bg);
+}
+
+.mc-prices-table-form-group .dropdown-item[data-dselect-value="form-table-header"] {
+    pointer-events: none;
+}
+
+/*---*/
+/*ПРОГРАММА КУРСА*/
+
+.mc-program-label {
+    background-color: var(--mc-secondary-accent-bg);
+}
+
+/*Аккордеон программы (временно отключён)*/
+
+.mc-accordion-program .accordion-item {
+    border-bottom: 1px solid var(--mc-secondary-border) !important;
+}
+
+.mc-accordion-program button,
+.mc-accordion-program .accordion-item {
+    background-color: transparent;
+}
+
+.mc-accordion-program button {
+    padding: 1.35rem 1.25rem;
+    box-shadow: none;
+    /*Временная отмена развёртывания элементов "аккордеона"*/
+    pointer-events: none;
+    cursor: auto;
+}
+
+.mc-accordion-program button::after {
+    /*Временная отмена развёртывания элементов "аккордеона"*/
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/*---*/
+/*ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ*/
+
+/*Аккордеон ЧЗВ (временно отключён функционал аккордеона, просто список)*/
+
+.mc-accordion-questions {
+    border-radius: 0.6rem;
+    border: 1px solid var(--mc-secondary-border);
+}
+
+.mc-accordion-questions button {
+    padding: 0.88rem 1.25rem !important;
+    background-color: transparent !important;
+}
+
+.mc-accordion-questions .accordion-item {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--mc-secondary-border);
+}
+
+.mc-accordion-questions .accordion-item:last-of-type {
+    border: 0;
+}

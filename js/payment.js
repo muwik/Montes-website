@@ -1,0 +1,1 @@
+dselect(document.querySelector('#mc-payment-section-currency'))
